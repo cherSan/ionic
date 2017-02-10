@@ -1,0 +1,14 @@
+<form [formGroup]="userForm" (ngSubmit)="auth()">
+  <ion-item>
+    <ion-label floating>Login</ion-label>
+    <ion-input type="number" formControlName="login" name="login" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" formControlName="password" name="password" clearInput></ion-input>
+  </ion-item>
+
+  <button ion-button type="submit" full >Log In</button>
+  <!--[disabled]="!userForm.valid"-->
+</form>

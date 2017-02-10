@@ -1,0 +1,7 @@
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Contacts" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Map" tabIcon="map"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="Products" tabIcon="star"></ion-tab>
+  <ion-tab (ionSelect)="logout()" tabTitle="Log Out" tabIcon="log-out"></ion-tab>
+</ion-tabs>

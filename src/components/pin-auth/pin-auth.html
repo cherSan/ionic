@@ -1,0 +1,27 @@
+<div class="progress" [class.process]="authProcess">
+  <span [class.active]="pin.length > 0"></span>
+  <span [class.active]="pin.length > 1"></span>
+  <span [class.active]="pin.length > 2"></span>
+  <span [class.active]="pin.length > 3"></span>
+</div>
+
+<ion-buttons>
+  <button ion-button (click)="setP(1)" [disabled]="authProcess">1</button>
+  <button ion-button (click)="setP(2)" [disabled]="authProcess">2</button>
+  <button ion-button (click)="setP(3)" [disabled]="authProcess">3</button>
+</ion-buttons>
+<ion-buttons>
+  <button ion-button (click)="setP(4)" [disabled]="authProcess">4</button>
+  <button ion-button (click)="setP(5)" [disabled]="authProcess">5</button>
+  <button ion-button (click)="setP(6)" [disabled]="authProcess">6</button>
+</ion-buttons>
+<ion-buttons>
+  <button ion-button (click)="setP(7)" [disabled]="authProcess">7</button>
+  <button ion-button (click)="setP(8)" [disabled]="authProcess">8</button>
+  <button ion-button (click)="setP(9)" [disabled]="authProcess">9</button>
+</ion-buttons>
+<ion-buttons>
+  <button ion-button (click)="clean()" [disabled]="authProcess">C</button>
+  <button ion-button (click)="setP(0)" [disabled]="authProcess">0</button>
+  <button ion-button (click)="removeLast()" [disabled]="authProcess"><</button>
+</ion-buttons>

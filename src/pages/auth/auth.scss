@@ -1,0 +1,15 @@
+page-auth {
+  .error-box {
+    color: red;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    animation-name: animatedError;
+    animation-duration: .4s;
+    @keyframes animatedError {
+      from {max-height: 0;}
+      to {max-height: 30px;}
+    }
+  }
+}
